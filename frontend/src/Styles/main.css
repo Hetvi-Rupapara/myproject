@@ -1,0 +1,88 @@
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #0b1020;
+  color: #f5f5f5;
+}
+
+/* Root layout */
+.app-root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 24px;
+  background-color: #141a32;
+  border-bottom: 1px solid #252b45;
+}
+
+.navbar__logo {
+  font-weight: 700;
+  color: #4fd1c5;
+}
+
+/* MAIN TWO-COLUMN LAYOUT */
+.main-container {
+  flex: 1;
+  display: grid;
+  grid-template-columns: 2fr 1fr; /* left, right */
+  gap: 16px;
+  padding: 16px 24px;
+}
+
+/* Cards */
+.section-box {
+  background-color: #141a32;
+  border-radius: 8px;
+  padding: 12px;
+  border: 1px solid #252b45;
+}
+
+/* Video placeholder */
+.video-placeholder {
+  height: 260px;
+  border: 1px dashed #4fd1c5;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #a0aec0;
+  font-size: 0.9rem;
+}
+
+/* Alerts */
+.alerts-list {
+  list-style: none;
+  margin-top: 8px;
+  padding: 0;
+}
+
+.alert-item {
+  padding: 8px;
+  margin-bottom: 8px;
+  border-radius: 4px;
+  background-color: #111827;
+  border-left: 4px solid #f97316;
+  font-size: 0.9rem;
+}
+
+/* Footer */
+.footer {
+  padding: 10px 24px;
+  text-align: center;
+  font-size: 0.8rem;
+  color: #a0aec0;
+  border-top: 1px solid #252b45;
+}

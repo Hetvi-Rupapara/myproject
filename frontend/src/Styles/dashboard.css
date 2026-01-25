@@ -1,0 +1,18 @@
+.dashboard {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+.main-content {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 16px;
+  padding: 16px;
+}
+
+.video-section,
+.alerts-section {
+  background-color: #1f2933;
+  border-radius: 8px;
+  padding: 16px;
+}
